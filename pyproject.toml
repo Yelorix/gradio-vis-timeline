@@ -1,0 +1,45 @@
+[build-system]
+requires = [
+  "hatchling",
+  "hatch-requirements-txt",
+  "hatch-fancy-pypi-readme>=22.5.0",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "gradio_vistimeline"
+version = "1.0.1"
+description = "Gradio implementation for the vis.js Timeline visualization library"
+readme = "README.md"
+license = "apache-2.0"
+requires-python = ">=3.10"
+authors = [{ name = "Yelorix", email = "yelorix@brigarix.com" }]
+keywords = ["gradio-custom-component", "timeline", "vis timeline", "vis-timeline", "vis.js"]
+
+dependencies = ["gradio>=4.0,<6.0"]
+classifiers = [
+  'Development Status :: 3 - Alpha',
+  'Operating System :: OS Independent',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3 :: Only',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Topic :: Scientific/Engineering',
+  'Topic :: Scientific/Engineering :: Artificial Intelligence',
+  'Topic :: Scientific/Engineering :: Visualization',
+]
+
+[project.urls]
+repository = "https://github.com/Yelorix/gradio-vis-timeline"
+space = "https://huggingface.co/spaces/Yelorix/gradio_vistimeline"
+
+[project.optional-dependencies]
+dev = ["build", "twine"]
+
+[tool.hatch.build]
+artifacts = ["/backend/gradio_vistimeline/templates", "*.pyi", "/\\backend\\gradio_vistimeline\\templates"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["/backend/gradio_vistimeline"]

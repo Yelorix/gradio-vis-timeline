@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@gradio/atoms": "^0.11.2",
+    "@gradio/statustracker": "^0.9.6"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "verbatimModuleSyntax": true,
+      "strict": true,
+      "moduleResolution": "bundler",
+      "isolatedModules": true
+    }
+  }
+  
